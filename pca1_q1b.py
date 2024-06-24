@@ -12,8 +12,8 @@ def crop_rotate_resize_image(image_path, crop_area, rotation_angle, resize_dimen
     print(f"Image cropped, rotated, resized, and saved to {save_path}")
 
 if __name__ == "__main__":
-    input_image_path = "E:/DIP_PCA1/inputImage/Lenna.png"
-    save_image_path = "E:/DIP_PCA1/savedImage/savedOne.jpg"
+    input_image_path = "E:/DIP_PCA1/q1_inputImage/Lenna.png"
+    save_image_path = "E:/DIP_PCA1/q1b_rotatedImage/rotatedOne.png"
 
     crop_area = (100, 100, 500, 500)
     rotation_angle = -45

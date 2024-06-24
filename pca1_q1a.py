@@ -11,7 +11,7 @@ def open_show_save_image(image_path, save_path):
 
 
 if __name__ == "__main__":
-    input_image_path = "E:/DIP_PCA1/inputImage/Lenna.png"
-    save_image_path = "E:/DIP_PCA1/savedImage/savedOne.jpg"
+    input_image_path = "E:/DIP_PCA1/q1_inputImage/Lenna.png"
+    save_image_path = "E:/DIP_PCA1/q1a_savedImage/savedOne.png"
 
     open_show_save_image(input_image_path, save_image_path)

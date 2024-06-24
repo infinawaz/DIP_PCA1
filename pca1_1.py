@@ -6,25 +6,17 @@ def crop_rotate_resize_image(image_path, crop_area, rotation_angle, resize_dimen
     
     with Image.open(image_path) as img:
         cropped_img = img.crop(crop_area)
-        # Rotate the image
         rotated_img = cropped_img.rotate(rotation_angle)
-        # Resize the image
         resized_img = rotated_img.resize(resize_dimensions)
-        # Save the manipulated image
         resized_img.save(save_path)
     print(f"Image cropped, rotated, resized, and saved to {save_path}")
 
-# Example usage:
 if __name__ == "__main__":
-    # Paths to the image files
-    input_image_path = "E:/DIP_PCA1/inputImage/inputOne.jpg"
+    input_image_path = "E:/DIP_PCA1/inputImage/Lenna.png"
     save_image_path = "E:/DIP_PCA1/savedImage/savedOne.jpg"
 
     crop_area = (100, 100, 500, 500)
-    # Rotation angle in degrees
     rotation_angle = -45
-    # Resize dimensions (width, height)
     resize_dimensions = (150, 150)
-
-    # Crop, Rotate, Resize an image
+    
     crop_rotate_resize_image(input_image_path, crop_area, rotation_angle, resize_dimensions, save_image_path)

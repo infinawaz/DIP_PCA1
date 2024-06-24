@@ -17,8 +17,8 @@ def crop_rotate_resize_image(image_path, crop_area, rotation_angle, resize_dimen
 # Example usage:
 if __name__ == "__main__":
     # Paths to the image files
-    input_image_path = "E:/DIP PCA1/inputImage/inputOne.jpg"
-    save_image_path = "E:/DIP PCA1/savedImage/savedOne.jpg"
+    input_image_path = "E:/DIP_PCA1/inputImage/inputOne.jpg"
+    save_image_path = "E:/DIP_PCA1/savedImage/savedOne.jpg"
 
     crop_area = (100, 100, 500, 500)
     # Rotation angle in degrees
